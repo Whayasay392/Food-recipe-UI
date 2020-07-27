@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/74091f2b8e.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,800' rel='stylesheet'>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Food Recipe UI</title>
+
+    <script>
+        function myTime() {
+            let today = new Date();
+            let h = today.getHours();
+            let m = today.getMinutes();
+            m = checkTime(m);
+            document.querySelector('.time').innerHTML= h + ":" + m;
+            document.querySelector('.time2').innerHTML= h + ":" + m;
+            document.querySelector('.time3').innerHTML= h + ":" + m;
+            let t = setTimeout(myTime, 500);
+        }
+        function checkTime(i) {
+            if (i<10) {i="0"+i};
+            return i;
+        }
+    </script>
+</head>
+<body onload="myTime()">
+    <main >
+        <section class="container">
+            <div class="box1">
+                <nav id="top">
+                    <a class="time">9:41</a>
+                    <div class="top-icons">
+                        <i class="fas fa-signal"></i>
+                        <i class="fas fa-wifi"></i>
+                        <i class="fas fa-battery-full"></i>
+    
+                    </div>
+                       
+                </nav>
+                <div class="break-div">
+                     <hr style="width: 5%; margin-bottom: 2px; ">
+                <hr style="width: 3%; ">
+                </div>
+               
+                <h1>What would you <br> like 2 Cook?</h1>
+                <div class="search-container">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" placeholder="Search for your query" id="search-input">
+                    <i class="fa fa-sliders" aria-hidden="true" id="slider icon"></i>
+                </div>
+                <h2 id="box1-subheader">Latest Recipes</h2>
+                <section class="mini-container">
+                    <div class="min-container-box1">
+                        <img src="/assets/images/burger-chef_hq_zquvff.png" alt="burger" id="min-burger1">
+                        <h3 class="minibox-header">Special Burger</h3>
+                        <p class="minibox-paragraph">2 Lessons | 3h12m</p>
+                        <div class="minibox-icons">
+                            <div class="heart-icon-div">
+                                <i id="heart-icon" class="fa fa-heart-o" aria-hidden="true"></i>
+                           </div>
+                          <div class="arrow-icon-div">
+                               <i id="arrow-icon" class="fa fa-arrow-up" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="min-container-box2">
+                        <img src="/assets/images/john-milk_fmyh5d.png" alt="burger" id="min-burger2">
+                        <h3 class="minibox-header">Filter Coffee</h3>
+                        <p class="minibox-paragraph">5 Lessons | 6h12m</p>
+                        <div class="minibox-icons">
+                            <div class="heart-icon-div">
+                                 <i id="heart-icon" class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                           <div class="arrow-icon-div">
+                                <i id="arrow-icon" class="fa fa-arrow-up" aria-hidden="true"></i>
+                           </div>
+                           
+                        </div>
+                    </div>
+                </section>
+                <h4 class="bottom-header">Recipe of the week</h4>
+                <div class="bottom-div">
+                    <div class="bottom-digit">
+                        <p class="digit">4.9</p>
+                    </div>
+                    <img src="/assets/images/chef-cheese_hpszne.png" alt="chef" id="chef">
+                </div>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="box2">
+                <nav id="top2">
+                    <a id="second-time" class="time2">9:41</a>
+                    <div class="top-icons">
+                        <i class="fas fa-signal"></i>
+                        <i class="fas fa-wifi"></i>
+                        <i class="fas fa-battery-full"></i>
+    
+                    </div>
+                       
+                </nav>
+                <img src="/assets/images/burger-chef_hq_zquvff.png" alt="chef" id="big-chef">
+                <div class="second-layer">
+                    <div class="difficulty-div">
+                        <h5 class="difficulty">Difficulty: Easy</h5>
+                        <p class="difficulty-mins">17 Mins</p>
+                    </div>
+                    <div class="mealsplan-div">
+                        <div class="cooking-div">
+                            <div class="mealimg-div">
+                                <img src="/assets/images/food.png" alt="" id="meal-img">
+                            </div>
+                            <p class="mealplans-header">Cooking</p>
+                            <p class="mealplans-paragraph">(10 Mins)</p>
+                        </div>
+                        <div class="cooking-div">
+                           <div class="mealimg-div">
+                               <img src="/assets/images/baking.png" alt="" id="meal-img">
+                           </div>
+                            <p class="mealplans-header">Baking</p>
+                            <p class="mealplans-paragraph">(2 Mins)</p>
+                        </div>
+                        <div class="cooking-div">
+                            <div class="mealimg-div">
+                                <img src="/assets/images/cook.png" alt="" id="meal-imgrest">
+                            </div>
+                            <p class="mealplans-header">Resting</p>
+                            <p class="mealplans-paragraph">(5 Mins)</p>
+                        </div>
+                    </div>
+                    <h5 class="utensils">Utensils</h5>
+                    <p class="utensils-paragraph">Cutting board, knife, 2 bowls, fine grater, cooking spoon, frying pan, blender, colander, paper, towels, tongs</p>
+                   
+                </div>
+                 <div class="box2-bottom-div">
+                        <h3 class="nutrition">Nutrition Per Serving</h3>
+                        <section class="elements-div">
+                            <div class="cal">
+                            <h2 class="box2-footer-head">Cal</h2>
+                            <p class="box2-footer-paragraph">433</p>
+                        </div>
+                        <div class="protein">
+                            <h2 class="box2-footer-head">Cal</h2>
+                            <p class="box2-footer-paragraph">433</p>
+                        </div>
+                        <div class="fat">
+                            <h2 class="box2-footer-head">Fat</h2>
+                            <p class="box2-footer-paragraph">39 G</p>
+                        </div>
+                        <div class="carb">
+                            <h2 class="box2-footer-head">Carb</h2>
+                            <p class="box2-footer-paragraph">20 G</p>
+                        </div>
+                        </section>
+                        
+                    </div>
+            </div>
+            <div class="box3">
+                <nav id="top">
+                    <a class="time3">9:41</a>
+                    <div class="top-icons">
+                        <i class="fas fa-signal"></i>
+                        <i class="fas fa-wifi"></i>
+                        <i class="fas fa-battery-full"></i>
+    
+                    </div>
+                    </nav>
+                    <div class="box3-img-div">
+                         <img src="/assets/images/hands-hq_mfvhje.png" alt="hand" id="hand-img">
+                    </div>
+                   
+                    <div class="kitchen-div">
+                        <h2 class="kitchen-header">Kitchen Story</h2>
+                        <p class="kitchen-paragraph">You don't have any story, Learn a <br> new recipe and say it</p>
+                        <div class="kitchenbtn-div">
+                             <button class="kitchen-btn">+</button>
+                        </div>
+                       
+                    </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
