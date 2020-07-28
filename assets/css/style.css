@@ -106,10 +106,10 @@ h1  {
     padding-left: 0.7rem;
 }
 .slider-div {
-    height: 2rem;
-    width: 2rem; 
+   max-height: 2rem;
+    max-width: 2rem; 
     float: right;
-    
+    border: 1px solid black;
 }
 #slider-icon    {
    margin-top: 0.3rem;
@@ -396,6 +396,7 @@ line-height: 2rem;
   
 
 /* Media Queries */
+
 @media(max-width: 799px)    {
     body    {
         background: grey;
@@ -410,8 +411,8 @@ line-height: 2rem;
         flex-basis: 99%;
         max-width: 99%;
       
-        height: 37rem;
-        max-height: 40rem;
+        height: 50rem;
+        max-height: 50rem;
     }
     .box2   {
         margin: 1.3rem 0;
@@ -434,16 +435,16 @@ line-height: 2rem;
     }
 }
 
-@media(max-width: 400px)    {
+@media(max-width: 420px)    {
     #search-input   {
        
         line-height: 1.5rem;
         font-size: 0.8rem;
     }
-    #slider-icon    {
+    /* #slider-icon    {
         margin-top: 0.2rem;
        
-     }
+     } */
      .box1, .box2, .box3 {
        
       
@@ -460,10 +461,10 @@ line-height: 2rem;
             line-height: 1.4rem;
             font-size: 0.5rem;
         }
-        #slider-icon    {
+        /* #slider-icon    {
             margin-top: 0.1rem;
            
-         }
+         } */
          .box1, .box2, .box3 {
            
           
