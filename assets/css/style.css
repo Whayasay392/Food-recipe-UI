@@ -441,10 +441,10 @@ line-height: 2rem;
         line-height: 1.5rem;
         font-size: 0.8rem;
     }
-    /* #slider-icon    {
-        margin-top: 0.2rem;
+    #slider-icon    {
+        margin-top: 0.1rem;
        
-     } */
+     }
      .box1, .box2, .box3 {
        
       
@@ -461,10 +461,10 @@ line-height: 2rem;
             line-height: 1.4rem;
             font-size: 0.5rem;
         }
-        /* #slider-icon    {
+        #slider-icon    {
             margin-top: 0.1rem;
            
-         } */
+         }
          .box1, .box2, .box3 {
            
           
